@@ -14,7 +14,6 @@ export default function App() {
         source={{ width: 200, height: 200, uri: "https://picsum.photos/200" }}
       />
       <StatusBar style="auto" />
-      <Text>Test</Text>
     </View>
   );
 }
