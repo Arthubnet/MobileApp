@@ -15,6 +15,8 @@ import {
   useDeviceOrientation,
 } from "@react-native-community/hooks";
 
+import colors from "../config/colors";
+
 function WelcomeScreen() {
   return (
     <ImageBackground
@@ -61,12 +63,12 @@ const styles = StyleSheet.create({
     width: "100%",
   },
   redBtn: {
-    backgroundColor: "tomato",
+    backgroundColor: colors.primary,
     width: "100%",
     padding: 30,
   },
   greenBtn: {
-    backgroundColor: "turquoise",
+    backgroundColor: colors.secondary,
     width: "100%",
     padding: 30,
   },
