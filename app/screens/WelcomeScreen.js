@@ -16,6 +16,7 @@ import {
 } from "@react-native-community/hooks";
 
 import colors from "../config/colors";
+import AppButton from "../components/AppButton";
 
 function WelcomeScreen() {
   return (
@@ -31,7 +32,7 @@ function WelcomeScreen() {
         <Text style={styles.title}>Sell What You Don't Need</Text>
       </View>
       <View style={styles.buttonsContainer}>
-        <TouchableOpacity style={styles.redBtn}></TouchableOpacity>
+        <AppButton title={"Login"} />
         <TouchableOpacity style={styles.greenBtn}></TouchableOpacity>
       </View>
     </ImageBackground>
@@ -61,11 +62,6 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {
     width: "100%",
-  },
-  redBtn: {
-    backgroundColor: colors.primary,
-    width: "100%",
-    padding: 30,
   },
   greenBtn: {
     backgroundColor: colors.secondary,
