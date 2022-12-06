@@ -33,7 +33,7 @@ function WelcomeScreen() {
       </View>
       <View style={styles.buttonsContainer}>
         <AppButton title={"Login"} />
-        <TouchableOpacity style={styles.greenBtn}></TouchableOpacity>
+        <AppButton title={"Register"} color={"secondary"} />
       </View>
     </ImageBackground>
   );
