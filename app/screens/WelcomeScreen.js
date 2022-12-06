@@ -21,6 +21,7 @@ import AppButton from "../components/AppButton";
 function WelcomeScreen() {
   return (
     <ImageBackground
+      blurRadius={5}
       style={styles.backgroundImage}
       source={require("../assets/background.jpg")}
     >
@@ -57,8 +58,9 @@ const styles = StyleSheet.create({
     height: 100,
   },
   title: {
-    fontSize: 16,
-    fontWeight: 500,
+    fontSize: 25,
+    fontWeight: "600",
+    paddingVertical: 20,
   },
   buttonsContainer: {
     width: "100%",
