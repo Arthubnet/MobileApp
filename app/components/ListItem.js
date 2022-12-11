@@ -4,13 +4,13 @@ import AppText from "./AppText";
 
 import colors from "../config/colors";
 
-export default function ListItem() {
+export default function ListItem({ title, description, image }) {
   return (
     <View style={styles.container}>
-      <Image style={styles.usersImage} source={require("../assets/user.jpg")} />
+      <Image style={styles.usersImage} source={image} />
       <View style={styles.titlesContainer}>
-        <AppText style={styles.title}>Ragnar Lothbrok</AppText>
-        <AppText style={styles.subTitle}>2 Listings</AppText>
+        <AppText style={styles.title}>{title}</AppText>
+        <AppText style={styles.subTitle}>{description}</AppText>
       </View>
     </View>
   );

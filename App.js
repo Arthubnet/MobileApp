@@ -11,6 +11,7 @@ import AppButton from "./app/components/AppButton";
 import Card from "./app/components/ListItem";
 import ListingDetailsScreen from "./app/screens/ListingDetailsScreen";
 import ListItem from "./app/components/ListItem";
+import MessagesScreen from "./app/screens/MessagesScreen";
 
 export default function App() {
   return (
@@ -20,7 +21,7 @@ export default function App() {
         <ListItem />
       </View>
     </View> */
-    <ViewImageScreen />
+    <MessagesScreen />
   );
 }
 
